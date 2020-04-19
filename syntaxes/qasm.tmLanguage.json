@@ -1,0 +1,73 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Qunix Lowlevel Language",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#registers"
+    },
+    {
+      "include": "#instructions"
+    },
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [{
+        "name": "comment.line.qasm",
+        "begin": ";",
+        "end": "\\n"
+      }]
+    },
+    "registers": {
+      "patterns": [{
+        "name": "entity.other.attribute-name.qasm",
+        "match": "\\b(r[0-9]|r[1-5][0-9]|r6[0-3]|ip)\\b"
+      }]
+    },
+    "instructions": {
+      "patterns": [{
+        "name": "keyword.control.qasm",
+        "match": "\\b(halt|int|load|store|mov|constant|add|sub|mul|div|mod|and|or|not|eq|neq|lt|gt|jmp|jz|jnz|nop|wait)\\b"
+      }]
+    },
+    "directives": {
+      "patterns": [{
+        "name": "keyword.control.qasm",
+        "match": "\\b(constant|data)\\b"
+      }]
+    },
+    "strings": {
+      "name": "string.quoted.single.qasm",
+      "begin": "'",
+      "end": "'",
+      "patterns": [{
+        "name": "constant.character.escape.qasm",
+        "match": "\\\\['n]"
+      }]
+    },
+    "numbers": {
+      "patterns": [{
+        "name": "constant.numeric.hexadecimal.qasm",
+        "match": "\\b(-?0x[0-9a-fA-F]+)\\b"
+      },{
+        "name": "constant.numeric.binary.qasm",
+        "match": "\\b(-?0b[01]+)\\b"
+      },{
+        "name": "constant.numeric.qasm",
+        "match": "\\b(-?[0-9]+)\\b"
+      }]
+    }
+  },
+  "scopeName": "source.qasm"
+}

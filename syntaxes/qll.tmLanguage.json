@@ -1,0 +1,73 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Qunix Lowlevel Language",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#storage"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [{
+        "name": "comment.line.qll",
+        "begin": "//",
+        "end": "\\n"
+      }]
+    },
+    "storage": {
+      "patterns": [{
+        "name": "storage.type.qll",
+        "match": "\\b(var|struct|void|byte)\\b"
+      }]
+    },
+    "operators": {
+      "patterns": [{
+        "name": "keyword.control.qll",
+        "match": "\\b(new|len)\\b"
+      }]
+    },
+    "keywords": {
+      "patterns": [{
+        "name": "keyword.control.qll",
+        "match": "\\b(namespace|function|global|type|if|else|while|for|return|break)\\b"
+      }]
+    },
+    "strings": {
+      "name": "string.quoted.single.qll",
+      "begin": "'",
+      "end": "'",
+      "patterns": [{
+        "name": "constant.character.escape.qll",
+        "match": "\\\\['n]"
+      }]
+    },
+    "numbers": {
+      "patterns": [{
+        "name": "constant.numeric.hexadecimal.qll",
+        "match": "\\b(-?0x[0-9a-fA-F]+)\\b"
+      },{
+        "name": "constant.numeric.binary.qll",
+        "match": "\\b(-?0b[01]+)\\b"
+      },{
+        "name": "constant.numeric.qll",
+        "match": "\\b(-?[0-9]+)\\b"
+      }]
+    }
+  },
+  "scopeName": "source.qll"
+}

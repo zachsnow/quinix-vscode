@@ -1,0 +1,34 @@
+{
+    "name": "quinix",
+    "displayName": "Quinix",
+    "description": "Quinix Language Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "qll",
+            "aliases": ["Qunix Lowlevel Language", "qll"],
+            "extensions": [".qll"],
+            "configuration": "./qll-language-configuration.json"
+        },{
+            "id": "qasm",
+            "aliases": ["Qunix Assembly Language", "qll"],
+            "extensions": [".qasm"],
+            "configuration": "./qasm-language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "qll",
+            "scopeName": "source.qll",
+            "path": "./syntaxes/qll.tmLanguage.json"
+        },{
+            "language": "qasm",
+            "scopeName": "source.qasm",
+            "path": "./syntaxes/qasm.tmLanguage.json"
+        }]
+    }
+}
