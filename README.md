@@ -8,7 +8,7 @@ A VS Code extension that (barely) supports syntax highlighting for the
 Open the root of this repository in VS Code and hit `F5`. This will open a new
 VS Code window with the extension running.
 
-## Installing loca
+## Installing from source
 
 To install the extesion from source simply run the following from
 the root of this repository:
