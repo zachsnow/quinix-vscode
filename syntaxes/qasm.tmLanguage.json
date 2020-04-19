@@ -6,6 +6,9 @@
       "include": "#comments"
     },
     {
+      "include": "#labels"
+    },
+    {
       "include": "#registers"
     },
     {
@@ -33,6 +36,12 @@
       "patterns": [{
         "name": "entity.other.attribute-name.qasm",
         "match": "\\b(r[0-9]|r[1-5][0-9]|r6[0-3]|ip)\\b"
+      }]
+    },
+    "labels": {
+      "patterns": [{
+        "name": "variable.name.qasm",
+        "match": "(@[a-zA-Z0-9:\\$]+)"
       }]
     },
     "instructions": {
