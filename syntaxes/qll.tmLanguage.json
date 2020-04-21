@@ -9,6 +9,9 @@
       "include": "#storage"
     },
     {
+      "include": "#values"
+    },
+    {
       "include": "#operators"
     },
     {
@@ -32,19 +35,25 @@
     "storage": {
       "patterns": [{
         "name": "storage.type.qll",
-        "match": "\\b(var|struct|void|byte|null)\\b"
+        "match": "\\b(struct|void|byte)\\b"
+      }]
+    },
+    "values": {
+      "patterns": [{
+        "name": "storage.type.qll",
+        "match": "\\b(null|true|false)\\b"
       }]
     },
     "operators": {
       "patterns": [{
         "name": "keyword.control.qll",
-        "match": "\\b(new|len)\\b"
+        "match": "\\b(new|len|sizeof)\\b"
       }]
     },
     "keywords": {
       "patterns": [{
         "name": "keyword.control.qll",
-        "match": "\\b(namespace|function|global|type|if|else|while|for|return|break)\\b"
+        "match": "\\b(var|namespace|function|global|type|if|else|while|for|return|break)\\b"
       }]
     },
     "strings": {
