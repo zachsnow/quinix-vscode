@@ -32,7 +32,7 @@
     "storage": {
       "patterns": [{
         "name": "storage.type.qll",
-        "match": "\\b(var|struct|void|byte)\\b"
+        "match": "\\b(var|struct|void|byte|null)\\b"
       }]
     },
     "operators": {
