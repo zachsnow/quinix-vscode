@@ -13,8 +13,9 @@ have a look -- it should be colorized.
 
 ## Installing from source
 
-To install the extesion from source simply run the following from
-the root of this repository:
+To install the extesion from source, first back-up your installed VS Code extensions
+(located at `~/.vscode/extensions/`) for safe keeping, then run the following from the root
+of this repository:
 
 ```bash
   $ ./install.sh
