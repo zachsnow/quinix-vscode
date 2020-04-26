@@ -21,5 +21,5 @@ of this repository:
   $ ./install.sh
 ```
 
-Then reload your VS Code window. (This will *not* install uncommitted changes as
-it uses `git archive` under the hood.)
+Then reload your VS Code window -- `.qasm` and `.qll` files should now be colorized.
+(Note that this script will *not* install uncommitted changes as it uses `git archive` under the hood.)
