@@ -47,7 +47,7 @@
     "operators": {
       "patterns": [{
         "name": "keyword.control.qll",
-        "match": "\\b(new|len|sizeof)\\b"
+        "match": "\\b(new|len|capacity|sizeof)\\b"
       }]
     },
     "keywords": {
