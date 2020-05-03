@@ -1,5 +1,5 @@
 {
-    "name": "quinix",
+    "name": "quinix-vscode",
     "displayName": "Quinix",
     "description": "Quinix Language Support",
     "version": "0.0.1",
@@ -30,5 +30,5 @@
             "scopeName": "source.qasm",
             "path": "./syntaxes/qasm.tmLanguage.json"
         }]
-    }
+    },
 }
