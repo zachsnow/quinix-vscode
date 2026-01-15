@@ -12,12 +12,12 @@
     "contributes": {
         "languages": [{
             "id": "qll",
-            "aliases": ["Qunix Lowlevel Language", "qll"],
+            "aliases": ["Quinix Lowlevel Language", "qll"],
             "extensions": [".qll"],
             "configuration": "./qll-language-configuration.json"
         },{
             "id": "qasm",
-            "aliases": ["Qunix Assembly Language", "qll"],
+            "aliases": ["Quinix Assembly Language", "qasm"],
             "extensions": [".qasm"],
             "configuration": "./qasm-language-configuration.json"
         }],
