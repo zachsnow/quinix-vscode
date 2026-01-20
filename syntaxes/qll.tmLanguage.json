@@ -40,14 +40,14 @@
     },
     "values": {
       "patterns": [{
-        "name": "storage.type.qll",
+        "name": "constant.language.qll",
         "match": "\\b(null|true|false)\\b"
       }]
     },
     "operators": {
       "patterns": [{
         "name": "keyword.control.qll",
-        "match": "\\b(new|delete|len|capacity|sizeof)\\b"
+        "match": "\\b(new|delete|len|cap|sizeof)\\b"
       }]
     },
     "keywords": {
@@ -57,12 +57,22 @@
       }]
     },
     "strings": {
-      "name": "string.quoted.single.qll",
-      "begin": "'",
-      "end": "'",
       "patterns": [{
-        "name": "constant.character.escape.qll",
-        "match": "\\\\['n]"
+        "name": "string.quoted.single.qll",
+        "begin": "'",
+        "end": "'",
+        "patterns": [{
+          "name": "constant.character.escape.qll",
+          "match": "\\\\[\\\\'\"n]"
+        }]
+      },{
+        "name": "string.quoted.double.qll",
+        "begin": "\"",
+        "end": "\"",
+        "patterns": [{
+          "name": "constant.character.escape.qll",
+          "match": "\\\\[\\\\'\"n]"
+        }]
       }]
     },
     "numbers": {
