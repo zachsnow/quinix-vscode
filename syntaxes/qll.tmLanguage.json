@@ -3,6 +3,9 @@
   "name": "Quinix Lowlevel Language",
   "patterns": [
     {
+      "include": "#tags"
+    },
+    {
       "include": "#operators"
     },
     {
@@ -42,6 +45,12 @@
       "patterns": [{
         "name": "constant.language.qll",
         "match": "\\b(null|true|false)\\b"
+      }]
+    },
+    "tags": {
+      "patterns": [{
+        "name": "entity.other.attribute-name.qll",
+        "match": "\\.[a-z]+"
       }]
     },
     "operators": {
