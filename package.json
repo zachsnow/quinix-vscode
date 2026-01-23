@@ -9,26 +9,48 @@
     "categories": [
         "Programming Languages"
     ],
+    "scripts": {
+        "validate": "node validate.js"
+    },
+    "devDependencies": {
+        "ajv": "^8.17.1"
+    },
     "contributes": {
-        "languages": [{
-            "id": "qll",
-            "aliases": ["Quinix Lowlevel Language", "qll"],
-            "extensions": [".qll"],
-            "configuration": "./qll-language-configuration.json"
-        },{
-            "id": "qasm",
-            "aliases": ["Quinix Assembly Language", "qasm"],
-            "extensions": [".qasm"],
-            "configuration": "./qasm-language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "qll",
-            "scopeName": "source.qll",
-            "path": "./syntaxes/qll.tmLanguage.json"
-        },{
-            "language": "qasm",
-            "scopeName": "source.qasm",
-            "path": "./syntaxes/qasm.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "qll",
+                "aliases": [
+                    "Quinix Lowlevel Language",
+                    "qll"
+                ],
+                "extensions": [
+                    ".qll"
+                ],
+                "configuration": "./qll-language-configuration.json"
+            },
+            {
+                "id": "qasm",
+                "aliases": [
+                    "Quinix Assembly Language",
+                    "qasm"
+                ],
+                "extensions": [
+                    ".qasm"
+                ],
+                "configuration": "./qasm-language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "qll",
+                "scopeName": "source.qll",
+                "path": "./syntaxes/qll.tmLanguage.json"
+            },
+            {
+                "language": "qasm",
+                "scopeName": "source.qasm",
+                "path": "./syntaxes/qasm.tmLanguage.json"
+            }
+        ]
     }
 }
