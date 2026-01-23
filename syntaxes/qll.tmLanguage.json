@@ -46,6 +46,9 @@
     },
     "operators": {
       "patterns": [{
+        "name": "keyword.operator.qll",
+        "match": "->"
+      },{
         "name": "keyword.control.qll",
         "match": "\\b(new|delete|len|cap|sizeof)\\b"
       }]
