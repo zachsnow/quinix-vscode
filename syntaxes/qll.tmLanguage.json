@@ -3,6 +3,9 @@
   "name": "Quinix Lowlevel Language",
   "patterns": [
     {
+      "include": "#operators"
+    },
+    {
       "include": "#comments"
     },
     {
@@ -10,9 +13,6 @@
     },
     {
       "include": "#values"
-    },
-    {
-      "include": "#operators"
     },
     {
       "include": "#keywords"
