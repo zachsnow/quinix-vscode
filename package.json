@@ -10,7 +10,7 @@
         "Programming Languages"
     ],
     "scripts": {
-        "validate": "node validate.js"
+        "validate": "bun validate.js"
     },
     "devDependencies": {
         "ajv": "^8.17.1"
