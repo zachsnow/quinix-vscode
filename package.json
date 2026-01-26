@@ -1,56 +1,56 @@
 {
-    "name": "quinix-vscode",
-    "displayName": "Quinix",
-    "description": "Quinix Language Support",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.96.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "scripts": {
-        "validate": "bun validate.js"
-    },
-    "devDependencies": {
-        "ajv": "^8.17.1"
-    },
-    "contributes": {
-        "languages": [
-            {
-                "id": "qll",
-                "aliases": [
-                    "Quinix Lowlevel Language",
-                    "qll"
-                ],
-                "extensions": [
-                    ".qll"
-                ],
-                "configuration": "./qll-language-configuration.json"
-            },
-            {
-                "id": "qasm",
-                "aliases": [
-                    "Quinix Assembly Language",
-                    "qasm"
-                ],
-                "extensions": [
-                    ".qasm"
-                ],
-                "configuration": "./qasm-language-configuration.json"
-            }
+  "name": "quinix-vscode",
+  "displayName": "Quinix",
+  "description": "Quinix Language Support",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "scripts": {
+    "validate": "bun bin/validate.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "qll",
+        "aliases": [
+          "Quinix Lowlevel Language",
+          "qll"
         ],
-        "grammars": [
-            {
-                "language": "qll",
-                "scopeName": "source.qll",
-                "path": "./syntaxes/qll.tmLanguage.json"
-            },
-            {
-                "language": "qasm",
-                "scopeName": "source.qasm",
-                "path": "./syntaxes/qasm.tmLanguage.json"
-            }
-        ]
-    }
+        "extensions": [
+          ".qll"
+        ],
+        "configuration": "./qll-language-configuration.json"
+      },
+      {
+        "id": "qasm",
+        "aliases": [
+          "Quinix Assembly Language",
+          "qasm"
+        ],
+        "extensions": [
+          ".qasm"
+        ],
+        "configuration": "./qasm-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "qll",
+        "scopeName": "source.qll",
+        "path": "./syntaxes/qll.tmLanguage.json"
+      },
+      {
+        "language": "qasm",
+        "scopeName": "source.qasm",
+        "path": "./syntaxes/qasm.tmLanguage.json"
+      }
+    ]
+  }
 }
