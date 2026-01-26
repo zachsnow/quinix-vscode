@@ -65,7 +65,7 @@
     "keywords": {
       "patterns": [{
         "name": "keyword.control.qll",
-        "match": "\\b(var|namespace|using|function|global|type|if|else|while|for|return|break|unsafe)\\b"
+        "match": "\\b(var|namespace|using|function|global|type|if|else|while|for|return|break|continue|unsafe)\\b"
       }]
     },
     "strings": {
