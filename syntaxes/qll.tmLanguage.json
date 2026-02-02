@@ -50,7 +50,10 @@
     "tags": {
       "patterns": [{
         "name": "entity.other.attribute-name.qll",
-        "match": "\\.[a-z]+"
+        "match": "(^|\\s)(\\.[a-z]+)(?=\\s|$)",
+        "captures": {
+          "2": { "name": "entity.other.attribute-name.qll" }
+        }
       }]
     },
     "operators": {
