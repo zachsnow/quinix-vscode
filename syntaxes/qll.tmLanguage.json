@@ -38,7 +38,7 @@
     "storage": {
       "patterns": [{
         "name": "storage.type.qll",
-        "match": "\\b(struct|void|byte|bool|string)\\b"
+        "match": "\\b(struct|void|byte|int|bool|string)\\b"
       }]
     },
     "values": {
